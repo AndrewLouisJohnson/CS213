@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<bsa>
+    <council name="Yosemite">
+        <troop name="Tenaya" number="113">
+            <scout>
+                <firstName>Andrew</firstName>
+                <lastName>Louis</lastName>
+                <address>
+                    <street>1 Park Way</street>
+                    <city>Yosemiteville</city>
+                    <state>CA</state>
+                </address>
+                <phone>800-123-4567</phone>
+                <rank date-earned="07/04/1927">Tenderfoot</rank>
+                <rank date-earned="07/04/1928">2ndClass</rank>
+                <rank date-earned="08/04/1928">1stClass</rank>
+                <rank date-earned="10/04/1929">Star</rank>
+                <rank date-earned="11/04/1929">Life</rank>
+                <rank date-earned="11/04/1930">Eagle</rank>
+                <meritBadge date-earned="07/04/1926">Underwater
+                    Basketweaving</meritBadge>
+                <meritBadge date-earned="08/04/1926">Understanding
+                    Women</meritBadge>
+                <meritBadge date-earned="9/04/1926">First Aid</meritBadge>
+                <meritBadge date-earned="10/04/1926">Camping</meritBadge>
+            </scout>
+            <scout>
+                <firstName>Mace</firstName>
+                <lastName>Windo</lastName>
+                <address>
+                    <street>52 Swamp Street</street>
+                    <city>Yosemiteville</city>
+                    <state>CA</state>
+                </address>
+                <phone>800-321-7654</phone>
+                <rank date-earned="07/04/1927">Tenderfoot</rank>
+                <rank date-earned="07/04/1928">2ndClass</rank>
+                <rank date-earned="08/04/1928">1stClass</rank>
+                <rank date-earned="10/04/1929">Star</rank>
+                <rank date-earned="11/04/1929">Life</rank>
+                <rank date-earned="11/04/1930">Eagle</rank>
+                <meritBadge date-earned="07/04/1926">Environmental
+                    Science</meritBadge>
+                <meritBadge date-earned="08/04/1926">Alligator
+                    Science</meritBadge>
+                <meritBadge date-earned="9/04/1926">Live Saving</meritBadge>
+                <meritBadge date-earned="10/04/1926">Camping</meritBadge>
+            </scout>
+        </troop>
+        <troop name="Silicon Valley" number="114">
+            <scout>
+                <firstName>Anakin</firstName>
+                <lastName>Skywalker</lastName>
+                <address>
+                    <street>64 Hometown</street>
+                    <city>Naboo</city>
+                    <state>UT</state>
+                </address>
+                <phone>800-394-4937</phone>
+                <rank date-earned="07/04/1927">Tenderfoot</rank>
+                <rank date-earned="07/04/1928">2ndClass</rank>
+                <rank date-earned="08/04/1928">1stClass</rank>
+                <rank date-earned="10/04/1929">Star</rank>
+                <rank date-earned="11/04/1929">Life</rank>
+                <rank date-earned="11/04/1930">Eagle</rank>
+                <meritBadge date-earned="07/04/1926">Environmental
+                    Science</meritBadge>
+                <meritBadge date-earned="08/04/1926">Sleeping</meritBadge>
+                <meritBadge date-earned="9/04/1926">Backpacking</meritBadge>
+                <meritBadge date-earned="10/04/1926">Camping</meritBadge>
+            </scout>
+        </troop>
+    </council>
+</bsa>
