@@ -1,9 +1,254 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <title>First page</title>
-   </head>
-   <body>
-      <p>Hello world!</p>
-   </body>
+  <head>
+      <title>Joe's Tackel and Bait</title>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <script type="text/javascript" src="Week07.js"></script>
+  </head>
+  <body onpageshow="initializeQuantity(); initializeCost()">
+    <img id="logo" src="logo.jpg">
+    <div id="nav">
+      <div id="nav_wrapper">
+        <ul>
+          <li>
+            <a href="javascript:show('Home', 'Shop', 'Checkout', 'Receipt')">
+              Home</a>
+          </li>
+          <li>
+            <a href="javascript:show('Shop', 'Home', 'Checkout', 'Receipt')">
+              Shop</a>
+          </li>
+            <li>
+              <a href="javascript:show('Checkout', 'Shop', 'Home', 'Receipt');
+              updateCart()">Cart</a>
+          </li>
+        </ul>
+      </div> <!-- Nav wrapper end -->
+    </div> <!-- Nav end -->
+    <div id="Home" style="display: block">
+      <article>
+        <h1>Lure of the Week</h1>
+        5 July 2018
+        <p><img style="max-width: 100%" src="lure1.jpg"></p>
+        <section>
+            You don’t hear much about them anymore. I really don’t understand
+            that because they’ve been a staple in my fishing since 1998. It’s
+            true that there are new plastic designs coming out every day, if
+            not every hour. But that doesn’t make any difference to me. I never
+            leave home without a few sacks in my truck or in my boat. I’m
+            talking about a simple, <i>old-fashioned 6-inch lizard.</i> There’s
+            a good reason for that. They catch fish. Some guys think it’s
+            because they look like the real thing. Other guys say they look
+            like something alive no matter if the bass has ever seen a lizard.
+            I don’t care about the why. All I care about is that they do it.
+        </section>
+      </br>
+        <section>
+            My choice is a Berkley Powerbait Lizard. It’s a basic, 6-inch
+            lizard with four legs and a tail — each of which has a curl to them
+            for subtle action. That’s important. I don’t want my lizard to have
+            a lot of action but I do want it to have some. As far as I’m
+            concerned the Berkley version is as close as you’ll ever get to
+            perfect.
+        </section>
+      </article>
+      <aside>
+        <h2>Events</h2>
+        <h3>Meet and Teach </h3>
+        <p><b><i>July 5 3:30 PM</i></b> -- We will be meeting with the master
+          himself Johnny Karate. Johnny will here with us for 2 hours talking
+          about the lures and bait he has been using to fish the on the snake
+          river this last month. He will also be doing a giveaway of his own
+          signiture rod and reel. All those in attendance will recive 5 free
+          entries and for additional entries post a picture of you and your
+          friends out on the river using the hashtag <i>#johnnykaraterodreel</i>
+        </br>
+          The giveaway will run from today until July 12 at midnight. The winner
+          will be announced Monday morning on our website and on Instagram.
+        </p>
+        <h3>Join Us On The Boat To Learn About Lobster Fishing </h3>
+        <p>Join us every Tuesday in the month of August. We will be picking 1-2
+           people to come with us on our lobster fishing boat to watch the
+           fishermen bring up the lobster pots. We will tell you all about the
+           pots and how they were loaded that morning and dropped into the
+           ocean. Johnny, our owner and master fisherman will talk you through
+           everything it takes to be a fisherman and all of the opportunities we
+           have for you to join us on excursions. Due to strict regulations you
+           will only be watching, as lobster licenses are tricky to come by.
+           Please email
+           <a href="mailto:cameron@lusciouslobster.com?Subject=GIMME%20LOBSTER"
+           target="_top">Joe@joetandb.com</a> with your interest in this event.
+        </p>
+      </aside>
+    </div>
+    <div id="Shop" style="display: none">
+      <form>
+        <table>
+          <tr>
+            <th style="text-align: center; font-size: 150%;">Your big catch is
+              just a lure away!
+            </th>
+          </tr>
+          <tr>
+            <td class="description">
+              <img src="crank.jpg"/>
+              <h3>Rapala Ultra Light Crank</h3> $20.00
+              <br/>
+              <span>Quantity desired:</span>
+              <br/>
+              <input type="number" size="2" onfocus="showButton('button1')"
+              oninput="setQuantity(this.value, 'crank'); updateCart()"/>
+              <button type="button" id="button1" onclick="show('Checkout',
+              'Shop', 'Home', 'Receipt');"/> Go to Checkout </button>
+              <p> Forget larger lures. The 1.5-inch Rapala Ultra Light
+                Crankbait is a perfect baitfish imitator that can sink to the
+                bottom of many a bass-ridden river or stream late in the
+                season.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="description">
+              <img src="shad.jpg"/>
+              <h3>Strike King Red Eye Shad</h3> $25.00
+              <br/>
+              <span>Quantity desired:</span>
+              <br/>
+              <input type="number" size="2" onfocus="showButton('button2')"
+              oninput="setQuantity(this.value, 'shad'); updateCart()"/>
+              <button type="button" id="button2" onclick="show('Checkout',
+              'Shop', 'Home', 'Receipt');"/> Go to Checkout </button>
+              <p>Need a shallow-water lure that’s perfect for fall bass
+                fishing? Bass fishing mastermind Kevin VanDam used this
+                gold-tinged, lipless crankbait beauty to score his third
+                Bassmaster Classic win in 2011.
+              <p>
+            </td>
+          </tr>
+          <tr>
+            <td class="description">
+              <img src="tate.jpg"/>
+              <h3>Gary Yamamoto Tate’ Pencil Bait</h3> $15.00
+              <br/>
+              <span>Quantity desired:</span>
+              <br/>
+              <input type="number" size="2" onfocus="showButton('button3')"
+              oninput="setQuantity(this.value, 'tate'); updateCart()"/>
+              <button type="button" id="button3" onclick="show('Checkout',
+              'Shop', 'Home', 'Receipt');"/> Go to Checkout </button>
+              <p> Tate’, which means “dance” in Japanese, is a classic
+                walk-the-dog topwater pencil bait with more character and zip
+                than its counterparts.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="description">
+              <img src="dog.jpg"/>
+              <h3>Southern Lure Scum Dog</h3> $17.00
+              <br/>
+              <span>Quantity desired:</span>
+              <br/>
+              <input type="number" size="2" onfocus="showButton('button4')"
+              oninput="setQuantity(this.value, 'dog'); updateCart()"/>
+              <button type="button" id="button4" onclick="show('Checkout',
+              'Shop', 'Home', 'Receipt');"/> Go to Checkout </button>
+              <p> You have to add a frog to your tackle box, and the Scum Dog
+                might be the best of the bunch.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div id="Checkout" style="display: none;">
+    <h2 style="margin-left: 2%;">Where are wating to lure your fish?</h2>
+      <div class="shipping">
+      <div>
+        <p>Name</p>
+        <input type="text" size="30" oninput="setName(this.value);
+        updateCart()"/>
+        <span class="error" id="name"></span>
+      </div>
+      <div>
+        <br/>
+        Street Address
+        <br/>
+        <span style="font-size: 0.8em; text-indent: 15px;">Line 1</span>
+        <br/>
+        <input type="text" size="35" maxlength="25"
+        oninput="setAddressLine1(this.value); updateCart()"/>
+        <span class="error" id="addressLine1"></span>
+        <br/>
+        <span style="font-size: 0.8em; text-indent: 15px;">Line 2</span>
+        <br/>
+        <input type="text" size="35" maxlength="25"
+        oninput="setAddressLine2(this.value); updateCart()"/>
+        <span class="error" id="addressLine2"></span>
+      </div>
+      <div>
+        <p>ZIP</p>
+        <input type="text" size="8" maxlength="5" oninput="setZIP(this.value);
+        updateCart()"/>
+        <span class="error" id="ZIP1"></span>
+        <span class="error" id="ZIP2"></span>
+        <span class="error" id="ZIP3"></span>
+      </div>
+      <div>
+        <p>State</p>
+        <input type="text" size="3" maxlength="2" oninput="setState(this.value);
+         updateCart()" onchange="calculateTotal()"/>
+        <span class="error" id="state"></span>
+      </div>
+      <div>
+        <p>Phone Number</p>
+        <input type="text" size="23" maxlength="12"
+                   oninput="setPhone(this.value); updateCart()"/>
+        <span class="error" id="phone"></span>
+      </div>
+      <div>
+        <p>Credit Card</p>
+        <select>
+          <option>Visa</option>
+          <option>MasterCard</option>
+          <option>American Express</option>
+          <option>Diner's Club</option>
+        </select>
+      </div>
+      <div>
+        <input type="text" size="35" maxlength="19"
+                   oninput="setCreditCard(this.value)"/>
+        <span class="error" id="card1"></span>
+        <span class="error" id="card2"></span>
+        <span class="error" id="card3"></span>
+      </div>
+      <p>
+      <button type="button" onclick="show('Receipt','Checkout', 'Shop',
+      'Home');"/> Submit Order </button>
+      </p>
+    </div>
+    <div id="shoppingCart">
+      <aside> <!--side panel with pricing, shipping, subtotals-->
+        <h2>Items in Cart</h2>
+        <p>
+          <span id="cart1"></span>
+          <span id="cart2"></span>
+          <span id="cart3"></span>
+          <span id="cart4"></span>
+          <span id="shippingCharge"></span>
+          <span id="empty"></span>
+        </p>
+        <p>
+          <span id="total"></span>
+        </p>
+      </aside>
+    </div>
+    <div id="Receipt" style.display="none">
+      <p>
+        <span style="font-size: 150%">Thank you for your order.</span>
+      </p>
+      <p> You'll get your lure tomorrow. Enjoy tomorrow's dinner! </p>
+    </div>
+  </body>
 </html>
