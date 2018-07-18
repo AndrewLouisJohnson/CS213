@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <title>First page</title>
-   </head>
-   <body>
-      <p>Hello world!</p>
-   </body>
+  <head>
+    <title>Assignment #13</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="week13.js"></script>
+  </head>
+  <body>
+    <h3>Basic Calculator</h3>
+    <p>This calculator shows some key features of the jQuery library.</p>
+    <br/>
+    <table border=2>
+      <tr>
+        <td colspan=4><input type="text" id="display" style="text-align:right;" disabled /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" class="digit" id="0"/></td>
+        <td><input type="button" value="1" class="digit" id="1"/></td>
+        <td><input type="button" value="2" class="digit" id="2"/></td>
+        <td><input type="button" value="+" class="operator" id="+"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="3" class="digit" id="3"/></td>
+        <td><input type="button" value="4" class="digit" id="4"/></td>
+        <td><input type="button" value="5" class="digit" id="5"/></td>
+        <td><input type="button" value="-" class="operator" id="-"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="6" class="digit" id="6"/></td>
+        <td><input type="button" value="7" class="digit" id="7"/></td>
+        <td><input type="button" value="8" class="digit" id="8"/></td>
+        <td><input type="button" value="*" class="operator" id="x"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="9" class="digit" id="9"/></td>
+        <td><input type="button" value="C" id="C"/></td>
+        <td><input type="button" value="=" id="equals"/></td>
+        <td><input type="button" value="/" class="operator" id="/"/></td>
+      </tr>
+    </table>
+  </body>
 </html>
